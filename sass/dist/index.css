@@ -18,6 +18,7 @@
 .alert-dismissible {
   padding-right: 4rem;
 }
+
 .alert-dismissible .close {
   position: absolute;
   top: 0;
@@ -8958,7 +8959,7 @@ pre code {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
 }
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
@@ -8967,4 +8968,110 @@ pre code {
 
 .bg-dark {
   background-color: #03292a !important;
+}
+
+.brand-fixed {
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  z-index: 10;
+}
+
+.navbar-fixed {
+  padding: 6px 0px !important;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.navbar-expand-md {
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.brand-row {
+  display: block;
+  width: 100%;
+}
+
+.navbar {
+  margin-top: 10px;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.navbar-expand-md .navbar-collapse {
+  flex-basis: auto;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  margin: 10px 0px 40px 0px;
+  padding: 6px 20px;
+  background-color: #076766;
+  font-weight: bolder;
+}
+
+.navbar-nav {
+  margin-left: 10px;
+}
+
+.nav-item {
+  margin-right: 6px;
+  padding: 0 10px;
+  background-color: #076766;
+}
+
+.nav-link {
+  font-weight: bold;
+  padding: 0px 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.dropdown-menu {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background-color: #076766;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  white-space: normal !important;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.taks-template {
+  padding: 10px 15px;
+}
+
+.taks-template .blog-main {
+  border: 10px solid #096566;
+  background-color: #1e3a3b;
+}
+.taks-template .blog-sidebar {
+  border: 10px solid #065252;
+  background-color: #1e3a3b;
+}
+.taks-template .blog-main .border {
+  border: 1px solid transparent !important;
+}
+.taks-template .border-dark {
+  background-color: #000105 !important;
+}
+.taks-template .border-light {
+  background-color: #646f71 !important;
+}
+.taks-template .blog-post .border:nth-child(3) {
+  margin: 0 0 10px 0;
+}
+.taks-template .blog-post .blog-post-title {
+  margin-top: 10px;
 }

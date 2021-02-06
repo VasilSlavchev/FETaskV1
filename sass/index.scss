@@ -44,7 +44,7 @@ $aside-background: rgb(6, 82, 82);
 $max-container: 1280px;
 
 .container {
-    width: $max-container;
+    max-width: $max-container;
 }
 
 .container-fluid {
@@ -53,4 +53,122 @@ $max-container: 1280px;
 
 .bg-dark {
     background-color: rgb(3, 41, 42) !important;
+}
+
+.brand-fixed {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    z-index: 10;
+}
+
+.navbar-fixed {
+    padding: 6px 0px !important;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.navbar-expand-md {
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+.brand-row {
+    display: block;
+    width: 100%;
+}
+
+.navbar {
+    margin-top: 10px;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.navbar-expand-md .navbar-collapse {
+    // display: block;
+    flex-basis: auto;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    margin: 10px 0px 40px 0px;
+    padding: 6px 20px;
+    background-color: $blog-background;
+    font-weight: bolder;
+}
+
+.navbar-nav {
+    margin-left: 10px;
+}
+
+.nav-item {
+    margin-right: 6px;
+    padding: 0 10px;
+    background-color: $blog-background;
+}
+
+.nav-link {
+    font-weight: bold;
+    padding: 0px 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.dropdown-menu {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    background-color: $blog-background;
+}
+
+.dropdown-item {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    white-space: normal !important;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.taks-template {
+    padding: 10px 15px;
+}
+
+.taks-template {
+
+    .blog-main {
+        border: 10px solid rgb(9, 101, 102);
+        background-color: rgb(30, 58, 59);
+    }
+
+    .blog-sidebar {
+        border: 10px solid rgb(6, 82, 82);
+        background-color: rgb(30, 58, 59);
+    }
+
+    .blog-main .border {
+        border: 1px solid transparent !important;
+    }
+
+    .border-dark {
+        background-color: rgb(0, 1, 5) !important;
+    }
+
+    .border-light {
+        background-color: rgb(100, 111, 113) !important;
+    }
+
+    .blog-post {
+        .border:nth-child(3) {
+            margin: 0 0 10px 0;
+        }
+
+        .blog-post-title {
+            margin-top: 10px;
+        }
+    }
 }
