@@ -8703,6 +8703,42 @@ pre code {
   margin-top: 10px;
 }
 
+.blog-footer {
+  padding: 10px 10px;
+  background-color: #076766;
+  color: #ffffff;
+}
+
+.blog-footer .copyright {
+  float: left !important;
+}
+
+.blog-footer .copyright p {
+  margin-bottom: 0;
+}
+
+.blog-footer .navigation {
+  float: right !important;
+}
+
+.blog-footer .navbar {
+  margin-top: 0;
+  padding: 0;
+}
+
+.blog-footer .navbar .nav-link {
+  padding: 0px 10px;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.blog-footer::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
 @media (max-width: 768px) {
   .navbar-fixed {
     display: none;

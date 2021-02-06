@@ -176,6 +176,42 @@ $max-container: 1280px;
 .font-aside {}
 .font-artical {}
 
+.blog-footer {
+    padding: 10px 10px;
+    background-color: $blog-background;
+    color: $primary-color;
+}
+
+.blog-footer {
+    .copyright {
+        @include float-left;
+    }
+
+    .copyright p {
+        margin-bottom: 0;
+    }
+
+    .navigation {
+        @include float-right;
+    }
+
+    .navbar {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .navbar .nav-link {
+        padding: 0px 10px;
+        font-weight: normal;
+        text-decoration: underline;
+        color: $primary-color;
+    }
+}
+
+.blog-footer {
+    @include clearfix;
+}
+
 @media (max-width: 768px) {
 
     .navbar-fixed {
