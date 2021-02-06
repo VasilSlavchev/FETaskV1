@@ -18,7 +18,6 @@
 .alert-dismissible {
   padding-right: 4rem;
 }
-
 .alert-dismissible .close {
   position: absolute;
   top: 0;
@@ -9074,4 +9073,18 @@ pre code {
 }
 .taks-template .blog-post .blog-post-title {
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar-fixed {
+    display: none;
+  }
+
+  .navbar-expand-md .navbar-collapse {
+    display: block;
+  }
+
+  .nav-item {
+    flex: 1 auto;
+  }
 }

@@ -172,3 +172,34 @@ $max-container: 1280px;
         }
     }
 }
+
+.font-aside {}
+.font-artical {}
+
+@media (max-width: 768px) {
+
+    .navbar-fixed {
+        display: none;
+    }
+
+    .navbar-expand-md .navbar-collapse {
+        display: block;
+    }
+
+    // .navbar-nav {
+    //     display:flex;
+    // }
+
+    .nav-item {
+        flex:1 auto;
+    }
+
+    // .nav-link {
+    //     width: 100%;
+    //     display: flex;
+    //     justify-content: space-around;
+    //     justify-content: space-between;
+    //     border: 1px solid red;
+    // }
+
+}
