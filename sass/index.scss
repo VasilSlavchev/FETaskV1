@@ -26,6 +26,12 @@
 @import "../node_modules/bootstrap/scss/code";
 @import "../node_modules/bootstrap/scss/grid";
 
+$bootstrap-sass-asset-helper: false;
+$icon-font-name: 'glyphicons-halflings-regular';
+$icon-font-svg-id: 'glyphicons_halflingsregular';
+$icon-font-path: '../../fonts/';
+
+@import "../node_modules/bootstrap/scss/glyphicons";
 
 // Custom styles for FrontEnd Task v1
 $primary-color: #ffffff;
