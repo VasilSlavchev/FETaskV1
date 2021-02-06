@@ -7508,6 +7508,15 @@ pre code {
 }
 
 @font-face {
+  font-family: 'Showcard Gothic';
+  src: url("../fonts/ShowcardGothic.eot");
+  src: url("../fonts/ShowcardGothic.eot?#iefix") format("embedded-opentype"), url("../fonts/ShowcardGothic.woff2") format("woff2"), url("../fonts/ShowcardGothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Glyphicons Halflings";
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
@@ -8626,11 +8635,12 @@ pre code {
 }
 
 .navbar-brand {
-  font-size: 24px;
+  font-size: 30px;
   margin: 10px 0px 40px 0px;
-  padding: 6px 20px;
+  padding: 0px 6px;
   background-color: #076766;
   font-weight: bolder;
+  font-family: 'Showcard Gothic';
 }
 
 .navbar-nav {
@@ -8703,6 +8713,28 @@ pre code {
   margin-top: 10px;
 }
 
+.article {
+  margin-bottom: 14px;
+}
+
+.btn-group-article .btn {
+  margin-right: 12px;
+  border-radius: 0;
+}
+
+.article .list-unstyled a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.font-aside {
+  font-family: 'Helvetica, sans-serif';
+}
+
+.font-artical {
+  text-transform: uppercase;
+}
+
 .blog-footer {
   padding: 10px 10px;
   background-color: #076766;
@@ -8740,13 +8772,63 @@ pre code {
 }
 
 @media (max-width: 768px) {
+  .navbar-brand {
+    display: initial;
+  }
+  .brand-row {
+    display: inline-table;
+    width: 0%;
+  }
   .navbar-fixed {
     display: none;
   }
-  .navbar-expand-md .navbar-collapse {
-    display: block;
-  }
   .nav-item {
     flex: 1 auto;
+  }
+  .carousel {
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.flex-artical {
+  display: flex;
+  flex-direction: row;
+  order: 5;
+}
+
+.font-artical {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+a a {
+  color: #00c;
+}
+
+a a:visited {
+  color: #0cc;
+}
+
+a a:hover {
+  color: #c0c;
+}
+
+a a:active {
+  color: #ccc;
+}
+
+@media (max-width: 425px) {
+  .nav-item {
+    width: 50%;
+    text-align: center;
   }
 }

@@ -31,6 +31,17 @@ $icon-font-name: 'glyphicons-halflings-regular';
 $icon-font-svg-id: 'glyphicons_halflingsregular';
 $icon-font-path: '../fonts/';
 
+@font-face {
+    font-family: 'Showcard Gothic';
+    src: url('../fonts/ShowcardGothic.eot');
+    src: url('../fonts/ShowcardGothic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ShowcardGothic.woff2') format('woff2'),
+        url('../fonts/ShowcardGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @import "../node_modules/bootstrap/scss/glyphicons";
 
 // Custom styles for FrontEnd Task v1
@@ -91,11 +102,12 @@ $max-container: 1280px;
 }
 
 .navbar-brand {
-    font-size: 24px;
+    font-size: 30px;
     margin: 10px 0px 40px 0px;
-    padding: 6px 20px;
+    padding: 0px 6px;
     background-color: $blog-background;
     font-weight: bolder;
+    font-family: 'Showcard Gothic';
 }
 
 .navbar-nav {
@@ -173,8 +185,27 @@ $max-container: 1280px;
     }
 }
 
-.font-aside {}
-.font-artical {}
+.article {
+    margin-bottom: 14px;
+}
+
+.btn-group-article .btn {
+    margin-right: 12px;
+    border-radius: 0;
+}
+
+.article .list-unstyled a {
+    color: $primary-color;
+    text-decoration: underline;
+}
+
+.font-aside {
+    font-family: 'Helvetica, sans-serif';
+}
+
+.font-artical {
+    text-transform: uppercase;
+}
 
 .blog-footer {
     padding: 10px 10px;
@@ -214,12 +245,21 @@ $max-container: 1280px;
 
 @media (max-width: 768px) {
 
+    .navbar-brand {
+        display: initial;
+    }
+
+    .brand-row {
+        display: inline-table;
+        width: 0%;
+    }
+
     .navbar-fixed {
         display: none;
     }
 
     .navbar-expand-md .navbar-collapse {
-        display: block;
+        // display: block;
     }
 
     // .navbar-nav {
@@ -238,4 +278,56 @@ $max-container: 1280px;
     //     border: 1px solid red;
     // }
 
+    .carousel {
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.flex-artical {
+    display: flex;
+    flex-direction: row;
+    order: 5;
+}
+
+.font-artical {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+@mixin linx ($link, $visit, $hover, $active) {
+    a {
+        color: $link;
+
+        &:visited {
+            color: $visit;
+        }
+
+        &:hover {
+            color: $hover;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+}
+
+a {
+    @include linx(#00c, #0cc, #c0c, #ccc);
+}
+
+@media (max-width: 425px) {
+    .nav-item {
+        width: 50%;
+        text-align: center;
+    }
 }
