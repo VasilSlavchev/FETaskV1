@@ -9156,6 +9156,13 @@ pre code {
     flex: 1 auto;
   }
 
+  .nav-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+  }
+
   .carousel {
     max-width: 400px;
     display: block;
@@ -9195,7 +9202,11 @@ a a:active {
 
 @media (max-width: 425px) {
   .nav-item {
-    width: 50%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .copyright {
     text-align: center;
   }
 }

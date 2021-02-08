@@ -258,31 +258,23 @@ $max-container: 1280px;
         display: none;
     }
 
-    .navbar-expand-md .navbar-collapse {
-        // display: block;
-    }
-
-    // .navbar-nav {
-    //     display:flex;
-    // }
-
     .nav-item {
         flex:1 auto;
     }
 
-    // .nav-link {
-    //     width: 100%;
-    //     display: flex;
-    //     justify-content: space-around;
-    //     justify-content: space-between;
-    //     border: 1px solid red;
-    // }
+    .nav-link {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        justify-content: space-between;
+    }
 
     .carousel {
         max-width: 400px;
         display: block;
         margin: 0 auto;
     }
+
 }
 
 .flex-artical {
@@ -327,7 +319,10 @@ a {
 
 @media (max-width: 425px) {
     .nav-item {
-        width: 50%;
+        width: 100%;
+        text-align: center;
+    }
+    .copyright {
         text-align: center;
     }
 }
