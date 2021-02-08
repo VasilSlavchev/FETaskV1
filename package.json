@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.6.0"
+    "bootstrap": "^4.6.0",
+    "gulp-htmlmin": "^5.0.1"
   },
   "devDependencies": {
     "del": "^6.0.0",
